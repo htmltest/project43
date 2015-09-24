@@ -60,13 +60,14 @@ nav > ul > li:hover > a {color:#cb0a0b}
 nav > ul > li > a > span {display:inline-block; vertical-align:top; width:0; height:0; margin:6px 0 0 4px; border-top:5px solid #cb0a0b; border-left:3px solid transparent; border-right:3px solid transparent}
 .nav-sub {display:none; position:absolute; left:0; top:100%; background:#303030; font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; text-align:left; padding:0 10px}
 nav > ul > li:hover > .nav-sub {display:block}
-.submenu {display:inline-block; vertical-align:top; width:220px; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; letter-spacing:0; padding:11px 0 14px 0}
+.submenu {display:inline-block; vertical-align:top; width:220px; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; letter-spacing:0; padding:6px 0 2px 0}
 .submenu ul {margin:0; padding:0; list-style:none}
-.submenu ul li {margin:0 0 -1px 0; padding:0; border-top:1px solid #555}
-.submenu ul li:hover {position:relative; z-index:2}
-.submenu ul li:first-child {border-top:none}
-.submenu ul li a {display:block; text-decoration:none; color:#fff; margin:-1px 0 0 0; padding:12px 0 9px 30px; position:relative}
-.submenu ul li a:hover {border-left:5px solid #cb0a0b; background:#393939; color:#cb0a0b; padding-left:25px}
+.submenu li {margin:0; padding:0 0 4px 0}
+.submenu a {display:block; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; color:#fff; position:relative; padding:9px 0 7px 20px; text-decoration:none}
+.submenu a:before {content:""; display:block; width:100%; height:100%; position:absolute; left:0; top:0; box-sizing:border-box; border:1px solid #fff; opacity:.25}
+.submenu a:hover:before {background:#fff}
+.submenu a:hover:after {content:""; display:block; width:5px; height:100%; background:#cb0a0b; position:absolute; left:0; top:0}
+.submenu a span {position:relative; z-index:2}
 .nav-fav {display:inline-block; vertical-align:top; padding:0 20px 0 40px; width:660px}
 .nav-fav-title {text-align:center; font:15px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; letter-spacing:0; color:#fff; text-align:center; padding:23px 0 0 0}
 .nav-fav-list {padding:6px 0 11px 0}
