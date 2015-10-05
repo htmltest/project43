@@ -137,6 +137,47 @@ var sliderTimer     = null;
             e.preventDefault();
         });
 
+        $('input.maskPhone').mask('+7 (999) 999-99-99');
+
+        $.extend($.validator.messages, {
+            required: 'Не заполнено поле',
+            email: 'Введен некорректный e-mail'
+        });
+
+        $('form').each(function() {
+            $(this).validate({
+              invalidHandler: function(form, validatorcalc) {
+                  validatorcalc.showErrors();
+                  $('.form-file').each(function() {
+                      var curField = $(this);
+                      if (curField.find('label.error').length > 0) {
+                          curField.after(curField.find('label.error').clone());
+                          curField.find('label.error').remove();
+                      }
+                  });
+              }
+            });
+        });
+
+        $('.form-checkbox span input:checked').parent().addClass('checked');
+        $('.form-checkbox').click(function() {
+            $(this).find('span').toggleClass('checked');
+            $(this).find('input').prop('checked', $(this).find('span').hasClass('checked')).trigger('change');
+        });
+
+        $('.form-radio span input:checked').parent().addClass('checked');
+        $('.form-radio').click(function() {
+            var curName = $(this).find('input').attr('name');
+            $('.form-radio input[name="' + curName + '"]').parent().removeClass('checked');
+            $(this).find('span').addClass('checked');
+            $(this).find('input').prop('checked', true).trigger('change');
+        });
+
+        $('.form-file input').change(function() {
+            $(this).parent().parent().find('.form-file-title').html($(this).val().replace(/.*(\/|\\)/, '')).show();
+            $(this).parent().parent().parent().find('label.error').remove();
+        });
+
     });
 
 })(jQuery);

@@ -11,6 +11,32 @@ a {color:#cb0a0b; outline:none; transition:color .5s ease}
 img {border:none}
 
 p {margin:20px 0; padding:0}
+h1 {text-transform:uppercase; font:20px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; margin:0 0 24px 0; padding:0}
+h2 {text-transform:uppercase; font:15px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; margin:43px 0 20px 0; padding:0}
+h3 {text-transform:uppercase; font:15px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; margin:43px 0 20px 0; padding:0}
+h3+p,
+h3+ul,
+h3+ol {margin-top:-13px}
+h4 {text-transform:uppercase; font:12px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; margin:33px 0 20px 0; padding:0}
+h4+p {margin-top:-13px}
+blockquote {background:#f8f8f8; margin:20px 0; padding:19px 20px 21px 20px; font-style:italic; color:#636363}
+ul {margin:10px 0; padding:0; list-style:none}
+ul li {margin:10px 0; padding:0 0 0 20px; position:relative}
+ul li:before {content:""; display:block; width:6px; height:6px; position:absolute; left:4px; top:8px; background:#c9232b}
+ol {margin:10px 0; padding:0; list-style:none; counter-reset:point}
+ol li {margin:10px 0; padding:0 0 0 20px; position:relative}
+ol li:before {content:counter(point)'.'; counter-increment:point 1; left:0; position:absolute; top:2px; font:13px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif}
+hr {margin:20px -10px; padding:0; background:#e5e5e5; height:1px; overflow:hidden; border:none}
+table {width:100%; border-collapse:collapse; margin:20px 0; border-bottom:2px solid #dbdbdb}
+th {text-align:left; font:9px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; opacity:.5; text-transform:uppercase; padding:0 0 6px 0; vertical-align:top; border-bottom:2px solid #dbdbdb}
+td {vertical-align:middle; border-top:1px solid #dbdbdb; padding:22px 0}
+form {margin:34px 0; padding:0}
+
+.table-cart {width:220px}
+
+.form-error {background:#fcf3f3; text-align:center; margin:20px 0; padding:24px 20px 21px 20px}
+.form-error-title {font:15px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase}
+.form-error-text {padding:4px 0 0 0}
 
 .wrapper {min-width:1000px; position:relative; width:100%; overflow:hidden; min-height:100%}
 .wrapper-inner {padding:0 0 220px 0}
@@ -54,6 +80,7 @@ nav {width:960px; position:relative; z-index:10; margin:0 auto; text-transform:u
 nav > ul {margin:0; padding:0; list-style:none; display:table; width:100%}
 nav > ul > li {margin:0; padding:0; display:table-cell; height:40px; border-left:1px solid #e2e2e2; position:relative}
 nav > ul > li:first-child {border-left:none}
+nav > ul > li:before {display:none}
 nav > ul > li > a {display:table-cell; height:28px; width:1000px; background:#f3f3f3; padding:12px 0 0 0; text-decoration:none; text-align:center; font:12px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; color:#000}
 nav > ul > li.active > a {background:#ddd}
 nav > ul > li:hover > a {color:#cb0a0b}
@@ -63,6 +90,7 @@ nav > ul > li:hover > .nav-sub {display:block}
 .submenu {display:inline-block; vertical-align:top; width:220px; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; letter-spacing:0; padding:6px 0 2px 0}
 .submenu ul {margin:0; padding:0; list-style:none}
 .submenu li {margin:0; padding:0 0 4px 0}
+.submenu li:before {display:none}
 .submenu a {display:block; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; color:#fff; position:relative; padding:9px 0 7px 20px; text-decoration:none}
 .submenu a:before {content:""; display:block; width:100%; height:100%; position:absolute; left:0; top:0; box-sizing:border-box; border:1px solid #fff; opacity:.25}
 .submenu a:hover:before {background:#fff}
@@ -77,6 +105,7 @@ nav > ul > li:hover > .nav-sub {display:block}
 .slider {position:relative; margin:17px auto 0 auto; width:960px; background:#000; min-height:366px}
 ul.slider-content {position:absolute; left:0; top:0; width:100%; height:100%; margin:0; padding:0; list-style:none}
 ul.slider-content li {position:absolute; left:-9999px; top:-9999px; width:100%; height:100%; padding:0 68px 0 330px; color:#fff; box-sizing:border-box; background-repeat:no-repeat; background-position:center; background-size:cover}
+ul.slider-content li:before {display:none}
 .slider-content-type {text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; padding:37px 0 0 0}
 .slider-content-title {text-transform:uppercase; font:30px/30px P22UndergroundCYProDemi, "PT Sans", sans-serif; padding:22px 0 0 0}
 .slider-content-text {font-size:15px; padding:12px 0 0 0; min-height:60px}
@@ -86,6 +115,7 @@ ul.slider-content li {position:absolute; left:-9999px; top:-9999px; width:100%; 
 .slider-content-link a:hover:before {border-color:#cb0a0b}
 ul.slider-preview {position:absolute; z-index:5; left:330px; bottom:27px; margin:0; padding:0; list-style:none; font:10px/11px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
 ul.slider-preview li {float:left; margin:0; padding:0 5px 0 0}
+ul.slider-preview li:before {display:none}
 ul.slider-preview a {display:block; position:relative; width:126px; height:32px; padding:0 20px 0 38px; color:#fff; text-decoration:none}
 ul.slider-preview a:before {content:""; display:block; position:absolute; left:0; top:0; width:100%; height:100%; box-sizing:border-box; border:1px solid #fff; opacity:.25}
 .slider-preview-photo {position:absolute; left:3px; top:3px; width:26px; height:26px; background:#000; overflow:hidden; line-height:0}
@@ -98,6 +128,7 @@ ul.slider-preview a:hover .slider-preview-name,
 ul.slider-preview li.active .slider-preview-name {opacity:.7}
 ul.slider-menu {position:relative; z-index:5; padding:6px 0 0 10px; margin:0; list-style:none; width:220px}
 ul.slider-menu li {margin:0; padding:0 0 4px 0}
+ul.slider-menu li:before {display:none}
 ul.slider-menu a {display:block; font:10px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; color:#fff; position:relative; padding:9px 0 7px 20px; text-decoration:none}
 ul.slider-menu a:before {content:""; display:block; width:100%; height:100%; position:absolute; left:0; top:0; box-sizing:border-box; border:1px solid #fff; opacity:.25}
 ul.slider-menu a:hover:before {background:#fff}
@@ -126,6 +157,7 @@ ul.slider-menu a span {position:relative; z-index:5}
 .manufacturers-list-letters ul {display:inline-block; vertical-align:top; margin:0; padding:0; list-style:none}
 .manufacturers-list-letters ul li {float:left; margin:0 1px; padding:9px 7px 2px 7px}
 .manufacturers-list-letters ul li.active {border:1px solid #c80025; padding:8px 6px 1px 6px}
+.manufacturers-list-letters ul li:before {display:none}
 .manufacturers-list-letters ul li a {text-decoration:none; color:#000}
 .manufacturers-list-letters ul li a:hover {color:#c51228}
 .manufacturers-list-cols {padding:37px 0 0 0}
@@ -137,6 +169,7 @@ ul.slider-menu a span {position:relative; z-index:5}
 .manufacturers-list-col div:first-child {padding:0}
 .manufacturers-list-col ul {margin:0; padding:0; list-style:none; font:10px/15px P22UndergroundCYProBook, "PT Sans", sans-serif}
 .manufacturers-list-col ul li {margin:0; padding:0}
+.manufacturers-list-col ul li:before {display:none}
 .manufacturers-list-col a {text-decoration:none; color:#969696}
 .manufacturers-list-col ul.active a,
 .manufacturers-list-col ul.hover a {color:#000}
@@ -157,6 +190,7 @@ ul.slider-menu a span {position:relative; z-index:5}
 .main-catalogue-tabs {text-align:center}
 .main-catalogue-tabs ul {margin:0; padding:0; list-style:none; display:inline-block; vertical-align:top}
 .main-catalogue-tabs li {float:left; margin:0; padding:0 10px}
+.main-catalogue-tabs li:before {display:none}
 .main-catalogue-tabs a {display:block; width:296px; height:36px; border:2px solid #e5e5e5; text-decoration:none; color:#000; font:15px/42px P22UndergroundCYProMedium, "PT Sans", sans-serif; text-transform:uppercase; transition:border-color .5s ease}
 .main-catalogue-tabs li.active a {border-color:#cb0a0b}
 
@@ -236,5 +270,68 @@ footer {min-width:1000px; height:156px; position:relative; background:#f2f2f2; m
 ul.footer-menu {float:left; margin:0; padding:32px 0 0 0; list-style:none; font:10px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
 ul.footer-menu li {margin:0; padding:0}
 ul.footer-menu li a {color:#c80025; text-decoration:none}
+ul.footer-menu li:before {display:none}
 
 .dev {float:right; line-height:0; padding:26px 0 0 0}
+
+.content {width:940px; margin:0 auto}
+
+.breadcrumbs {text-transform:uppercase; font:10px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; margin:22px 0 37px 0}
+.breadcrumbs span {display:inline-block; vertical-align:middle; width:5px; height:7px; background:url(../images/breadcrumbs.png); margin:-2px 4px 0 6px}
+.breadcrumbs a {text-decoration:none}
+
+.content-img {margin:41px -10px 20px -10px; line-height:0}
+.content-img img {width:100%}
+
+.content-doc-link {margin:20px 0}
+.content-doc-link:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.content-doc-link a {float:left; text-decoration:none}
+.content-doc-link img {float:left; margin:0 10px 0 0}
+.content-doc-link-text {float:left; text-transform:uppercase}
+.content-doc-link-title {font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif}
+.content-doc-link-info {font-size:11px; color:#000; margin-top:-2px}
+
+.link-to-cart {display:block; text-decoration:none; text-align:center; text-transform:uppercase; color:#000; width:220px; height:30px; background:#f2f2f2; font:10px/34px P22UndergroundCYProDemi, "PT Sans", sans-serif}
+.link-to-cart img {vertical-align:middle; margin:-2px 7px 0 0}
+.link-to-cart:hover {color:#cb0a0b}
+
+.table-title {display:table; width:100%; margin:40px 0 20px 0}
+.table-title h3 {display:table-cell; vertical-align:middle; margin:0; padding:8px 0 0 0}
+.table-title-all {display:table-cell; width:220px}
+.cart-item-link {text-decoration:none}
+.cart-item-name {text-transform:uppercase; font:12px/14px P22UndergroundCYProDemi, "PT Sans", sans-serif}
+
+.form-row {margin:17px 0}
+.form-row:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.form-label {float:left; width:240px; text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; padding:8px 0 0 0}
+.form-label span {color:#cb0a0b}
+.form-field {float:left; width:700px}
+
+.form-input input {border:1px solid #bfbfbf; font:bold 15px/20px "PT Sans", sans-serif; color:#000; vertical-align:top; margin:0; padding:5px 9px 8px 9px; width:100%; height:33px; box-sizing:border-box; outline:none; border-radius:0; box-shadow:none; background:#fff}
+.form-input input.error {border-color:#cb0a0b}
+.form-input input:focus {border-color:#000}
+
+.form-textarea textarea {border:1px solid #bfbfbf; font:bold 15px/20px "PT Sans", sans-serif; color:#000; vertical-align:top; margin:0; padding:5px 9px 8px 9px; width:100%; height:93px; box-sizing:border-box; outline:none; border-radius:0; box-shadow:none; background:#fff; overflow:auto; resize:none}
+.form-textarea textarea.error {border-color:#cb0a0b}
+.form-textarea textarea:focus {border-color:#000}
+
+.form-hint {padding:2px 0 0 10px; color:#808080}
+.form-input label.error {color:#cb0a0b; padding:2px 0 0 10px}
+
+.form-checkbox {float:left; padding:0 0 0 27px; position:relative; line-height:17px; cursor:pointer; margin:8px 27px 8px 0}
+.form-checkbox span {display:block; position:absolute; left:0; top:0; width:17px; height:17px; overflow:hidden; background:url(../images/checkbox.png)}
+.form-checkbox span.checked {background-position:left -17px}
+.form-checkbox input {position:absolute; left:-99px; top:-99px}
+
+.form-radio {float:left; padding:0 0 0 27px; position:relative; line-height:17px; cursor:pointer; margin:8px 27px 8px 0}
+.form-radio span {display:block; position:absolute; left:0; top:0; width:17px; height:17px; overflow:hidden; background:url(../images/radio.png)}
+.form-radio span.checked {background-position:left -17px}
+.form-radio input {position:absolute; left:-99px; top:-99px}
+
+.form-file-title {display:none; padding:5px 0}
+.form-file-input {position:relative; width:140px; height:24px; padding:9px 0 0 0; overflow:hidden; background:#e9e9e9; text-align:center; cursor:pointer; text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif}
+.form-file-input span {background:url(../images/input-file.png) repeat-x left bottom}
+.form-file-input input {height:200px; position:absolute; top:0; right:0; opacity:0; cursor:pointer; font-size:200px; background:url(../images/blank.gif)}
+
+.form-submit {margin:24px 0; text-align:right}
+.form-submit input {vertical-align:top; border:none; border-radius:2px; background:#cb0a0b; overflow:visible; margin:0; padding:0 75px; outline:none; height:40px; color:#fff; text-align:center; cursor:pointer; font:12px/44px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
