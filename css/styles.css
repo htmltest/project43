@@ -335,3 +335,44 @@ ul.footer-menu li:before {display:none}
 
 .form-submit {margin:24px 0; text-align:right}
 .form-submit input {vertical-align:top; border:none; border-radius:2px; background:#cb0a0b; overflow:visible; margin:0; padding:0 75px; outline:none; height:40px; color:#fff; text-align:center; cursor:pointer; font:12px/44px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
+
+.catalogue {padding:30px 0 0 0}
+.catalogue:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+
+.catalogue-menu {float:left; width:220px; text-transform:uppercase; font-size:10px; line-height:15px}
+.catalogue-menu ul {margin:0; padding:0; list-style:none}
+.catalogue-menu li {margin:0; padding:0}
+.catalogue-menu li:before {display:none}
+.catalogue-menu > ul {font-family:P22UndergroundCYProDemi, "PT Sans", sans-serif}
+.catalogue-menu > ul > li > ul {font-family:P22UndergroundCYProBook, "PT Sans", sans-serif}
+.catalogue-menu a {display:block; text-decoration:none; color:#000}
+.catalogue-menu a:hover {color:#261f1c}
+.catalogue-menu > ul > li {border-top:1px solid #e0e0e0}
+.catalogue-menu > ul > li:first-child {border:none}
+.catalogue-menu > ul > li > a {background:#eaeaea; padding:14px 10px 10px 20px}
+.catalogue-menu > ul > li.active > a,
+.catalogue-menu > ul > li > a:hover {background:#dadada; padding-left:15px; border-left:5px solid #cb0a0b}
+.catalogue-menu > ul > li > ul > li {border-top:1px solid #ebebeb}
+.catalogue-menu > ul > li > ul > li:first-child {border:none}
+.catalogue-menu > ul > li > ul > li > a {background:#f9f9f9; padding:14px 10px 10px 30px}
+.catalogue-menu > ul > li > ul > li.active > a,
+.catalogue-menu > ul > li > ul > li > a:hover {background:#d2d3d4}
+
+.catalogue-content {float:right; width:700px}
+
+.pager {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; margin:30px 0 0 0}
+.pager:first-child {margin:0}
+.pager a {display:inline-block; vertical-align:top; width:31px; height:17px; margin:0 1px; border:1px solid #000; font:10px/19px P22UndergroundCYProDemi, "PT Sans", sans-serif; letter-spacing:0; text-align:center; text-decoration:none; color:#000}
+.pager a.active,
+.pager a:hover {border-color:#cb0a0b}
+.pager span {display:inline-block; vertical-align:top; width:31px; height:17px; margin:0 1px; border:1px solid #bfbfbf; font:10px/19px P22UndergroundCYProDemi, "PT Sans", sans-serif; letter-spacing:0; text-align:center; text-decoration:none; color:#000}
+
+.catalogue-list {font-size:0; line-height:0; letter-spacing:-1px; margin:0 0 0 -20px}
+.catalogue-item {display:inline-block; vertical-align:top; width:220px; padding:30px 0 10px 20px; text-align:center}
+.catalogue-item:after {content:""; display:block; width:30px; height:1px; margin:18px auto 0 auto; background:#cb0a0b}
+.catalogue-item a {display:block; text-decoration:none; color:#000; text-transform:uppercase}
+.catalogue-item-photo {padding:2px; background:#fff; border:2px solid #dcdcdc; width:212px; position:relative; overflow:hidden; line-height:0; transition:border-color .5s ease}
+.catalogue-item a:hover .catalogue-item-photo {border-color:#c51a1a}
+.catalogue-discount {position:absolute; right:8px; top:8px; width:29px; height:29px; background:url(../images/main-catalogue-discount.png)}
+.catalogue-item-name {font:12px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; letter-spacing:0; text-align:center; padding:21px 0 0 0}
+.catalogue-item-title {font:10px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; letter-spacing:0; text-align:center}
