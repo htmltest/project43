@@ -187,6 +187,8 @@ ul.slider-menu a span {position:relative; z-index:5}
 .manufacturers-more-close a:after {content:""; display:inline-block; vertical-align:middle; width:11px; height:7px; background:url(../images/manufacturers-arrows.png) left -7px; margin:-2px 0 0 9px}
 
 .main-catalogue {width:960px; margin:0 auto; padding:49px 0 58px 0}
+.content+.main-catalogue,
+.main-catalogue+.main-catalogue {border-top:1px solid #e5e5e5; padding:40px 0 38px 0}
 .main-catalogue-tabs {text-align:center}
 .main-catalogue-tabs ul {margin:0; padding:0; list-style:none; display:inline-block; vertical-align:top}
 .main-catalogue-tabs li {float:left; margin:0; padding:0 10px}
@@ -376,3 +378,45 @@ ul.footer-menu li:before {display:none}
 .catalogue-discount {position:absolute; right:8px; top:8px; width:29px; height:29px; background:url(../images/main-catalogue-discount.png)}
 .catalogue-item-name {font:12px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; letter-spacing:0; text-align:center; padding:21px 0 0 0}
 .catalogue-item-title {font:10px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; letter-spacing:0; text-align:center}
+
+.product-header {position:relative; padding:5px 0 0 0}
+.product-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.product-header h1 {margin:0; text-align:center}
+.product-prev {position:absolute; top:-8px; left:-10px; display:block; height:39px; text-decoration:none; color:#000; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; padding:0 0 0 19px}
+.product-prev:hover {background:#f8f8f8}
+.product-prev span {display:none; padding:12px 21px 0 9px}
+.product-prev:hover span {display:block}
+.product-prev:before {content:""; display:block; width:10px; height:17px; background:url(../images/product-header-arrows.png); position:absolute; left:9px; top:11px}
+.product-prev:hover:before {background-position:left -17px}
+.product-next {position:absolute; top:-8px; right:-10px; display:block; height:39px; text-decoration:none; color:#000; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; padding:0 19px 0 0}
+.product-next:hover {background:#f8f8f8}
+.product-next span {display:none; padding:12px 9px 0 21px}
+.product-next:hover span {display:block}
+.product-next:before {content:""; display:block; width:10px; height:17px; background:url(../images/product-header-arrows.png) -10px top; position:absolute; right:9px; top:11px}
+.product-next:hover:before {background-position:-10px -17px}
+
+.detail {padding:32px 0 20px 0}
+.detail:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.detail-photos {float:left; width:550px; margin:0 0 0 -10px; line-height:0}
+.detail-photo-big {border:2px solid #dbdbdb; padding:2px}
+.detail-photo-big img {width:100%}
+.detail-photo-preview {margin:28px 0 0 -14px}
+.detail-photo-preview:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.detail-photo-preview ul {margin:0; padding:0; list-style:none}
+.detail-photo-preview li {float:left; margin:14px 0 0 14px; position:relative; padding:0}
+.detail-photo-preview li:before {display:none}
+.detail-photo-preview a {display:block; width:72px; height:72px; padding:2px; border:2px solid #dcdcdc}
+.detail-photo-preview a:hover {border-color:#e29898}
+.detail-photo-preview li.active a {border-color:#f00}
+
+.detail-info {float:right; width:380px}
+.detail-info dl {margin:9px 0 -9px 0; padding:0}
+.detail-info dl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.detail-info dt {float:left; clear:left; width:160px; color:#626262; font:9px/24px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
+.detail-info dd {margin-left:60px; font:13px/24px P22UndergroundCYProDemi, "PT Sans", sans-serif}
+.detail-info h2 {border-bottom:1px solid #dbdbdb; padding-bottom:7px}
+.detail-info table {border:none}
+.detail-info td {border:none; padding:6px 0}
+.detail-info .b-share_theme_counter {margin-left:-4px}
+
+.history-title {text-align:center; text-transform:uppercase; font:15px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; margin:13px 0 -13px 0}
