@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HouseStudio</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=1000" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <div class="top-cabinet"><a href="#">Личный кабинет</a></div>
+                        <div class="top-social">
+                            <a href="#"><img src="images/social-vk.png" alt="" width="20" height="11" /></a>
+                            <a href="#"><img src="images/social-fb.png" alt="" width="7" height="14" /></a>
+                            <a href="#"><img src="images/social-in.png" alt="" width="15" height="15" /></a>
+                        </div>
+                        <div class="top-address">Москва, ул. Новослободская,  д. 62/15</div>
+                        <div class="top-search">
+                            <form action="#" method="post">
+                                <div class="top-search-input"><input type="text" name="search" value="" placeholder="Поиск по сайту" /></div>
+                                <div class="top-search-submit"><input type="submit" value="" /></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="logo"><img src="images/logo.png" alt="" width="420" height="40" /></div>
+                    <div class="header-phones">+7 (916) 697-45-85 <span>/</span> +7 (985) 123-18-92</div>
+                    <div class="header-cart"><a href="#">В запросе: <span>3 товара</span></a></div>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="#">Мебель<span></span></a>
+                            <div class="nav-sub">
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#"><span>Кухни</span></a></li>
+                                        <li><a href="#"><span>Гостиные</span></a></li>
+                                        <li><a href="#"><span>Спальни</span></a></li>
+                                        <li><a href="#"><span>Кабинеты</span></a></li>
+                                        <li><a href="#"><span>Детские</span></a></li>
+                                        <li><a href="#"><span>Прихожие</span></a></li>
+                                        <li><a href="#"><span>Двери</span></a></li>
+                                        <li><a href="#"><span>Для улицы</span></a></li>
+                                        <li><a href="#"><span>Офисная мебель</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-fav">
+                                    <div class="nav-fav-title">лучшие предложения</div>
+                                    <div class="nav-fav-list">
+                                        <a href="#"><img src="files/main-project-1.jpg" alt="" width="172" height="112" /></a>
+                                        <a href="#"><img src="files/main-project-2.jpg" alt="" width="172" height="112" /></a>
+                                        <a href="#"><img src="files/submenu-3.jpg" alt="" width="172" height="112" /></a>
+                                    </div>
+                                    <div class="nav-fav-title">Новинки</div>
+                                    <div class="nav-fav-list">
+                                        <a href="#"><img src="files/main-project-3.jpg" alt="" width="172" height="112" /></a>
+                                        <a href="#"><img src="files/main-project-4.jpg" alt="" width="172" height="112" /></a>
+                                        <a href="#"><img src="files/submenu-6.jpg" alt="" width="172" height="112" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Свет</a></li>
+                        <li><a href="#">Обои и текстиль</a></li>
+                        <li><a href="#">Наши проекты</a></li>
+                        <li>
+                            <a href="#">Наши услуги<span></span></a>
+                            <div class="nav-sub">
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#"><span>Кухни</span></a></li>
+                                        <li><a href="#"><span>Гостиные</span></a></li>
+                                        <li><a href="#"><span>Спальни</span></a></li>
+                                        <li><a href="#"><span>Кабинеты</span></a></li>
+                                        <li><a href="#"><span>Детские</span></a></li>
+                                        <li><a href="#"><span>Прихожие</span></a></li>
+                                        <li><a href="#"><span>Двери</span></a></li>
+                                        <li><a href="#"><span>Для улицы</span></a></li>
+                                        <li><a href="#"><span>Офисная мебель</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <!-- content -->
+                <div class="content">
+
+                    <h1>Запрос</h1>
+
+                    <!-- basket -->
+                    <div class="basket">
+                        <div class="table-title">
+                            <h3>Товары в запросе</h3>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>название</th>
+                                    <th>бренд</th>
+                                    <th>категория</th>
+                                    <th>размеры</th>
+                                    <th>Артикул</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="basket-del"><a href="#"></a></td>
+                                    <td>
+                                        <div class="cart-item-name"><a href="#">Пуф Monseigeur</a></div>
+                                        кожа, классическое оформление
+                                    </td>
+                                    <td><a href="#" class="cart-item-link">Driade</a></td>
+                                    <td><a href="#" class="cart-item-link">Кресла</a></td>
+                                    <td>138 х 91 х 91</td>
+                                    <td>A234-2324</td>
+                                </tr>
+                                <tr>
+                                    <td class="basket-del"><a href="#"></a></td>
+                                    <td>
+                                        <div class="cart-item-name"><a href="#">Стол Kless</a></div>
+                                        гранитная крышка, стальные ножки
+                                    </td>
+                                    <td><a href="#" class="cart-item-link">Driade</a></td>
+                                    <td><a href="#" class="cart-item-link">Столы</a></td>
+                                    <td>2138 х 191 х 391</td>
+                                    <td>FD768-2276</td>
+                                </tr>
+                                <tr>
+                                    <td class="basket-del"><a href="#"></a></td>
+                                    <td>
+                                        <div class="cart-item-name"><a href="#">Диван Monada</a></div>
+                                        кожа, классическое оформление
+                                    </td>
+                                    <td><a href="#" class="cart-item-link">Driade</a></td>
+                                    <td><a href="#" class="cart-item-link">Диваны</a></td>
+                                    <td>10138 х191 х 391</td>
+                                    <td>B76-243</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- basket END-->
+
+                    <h2>Данные запроса</h2>
+
+                    <div class="form-error">
+                        <div class="form-error-title">Ошибка!</div>
+                        <div class="form-error-text">Описание ошибки. может быть достаточно длинным.</div>
+                    </div>
+
+                    <form action="#" method="post">
+
+                        <div class="form-row">
+                            <div class="form-label">Ваше имя<span>*</span></div>
+                            <div class="form-field">
+                                <div class="form-input"><input type="text" name="name" value="Петро Миколович Поленко" class="required" /></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-label">Адрес электронной почты<span>*</span></div>
+                            <div class="form-field">
+                                <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-label">Телефон</div>
+                            <div class="form-field">
+                                <div class="form-input"><input type="text" name="phone" value="" class="maskPhone" /></div>
+                                <div class="form-hint">пример заполнения: +7 (987) 654-32-10</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-label">Ваши пожелания</div>
+                            <div class="form-field">
+                                <div class="form-textarea"><textarea name="message" rows="5" cols="5"></textarea></div>
+                            </div>
+                        </div>
+
+                        <div class="form-submit"><input type="submit" value="отправить" /></div>
+
+                    </form>
+
+                </div>
+                <!-- content END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-contacts">
+                    <dl>
+                        <dt>Адрес</dt>
+                        <dd>Москва, ул. Новослободская,  д. 62/15</dd>
+
+                        <dt>Телефон</dt>
+                        <dd>+7 (985) 123-18-92</dd>
+
+                        <dt>E-mail</dt>
+                        <dd><a href="mailto:salon@house-1.ru">salon@house-1.ru</a></dd>
+                    </dl>
+
+                    <div class="copyrights">© 2015 «House studio»</div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#"><span><img src="images/social-vk.png" alt="" width="20" height="11" /></span>вКонтакте</a>
+                    <a href="#"><span><img src="images/social-fb.png" alt="" width="7" height="14" /></span>Facebook</a>
+                    <a href="#"><span><img src="images/social-in.png" alt="" width="15" height="15" /></span>Instagram</a>
+                </div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">обратная связь</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">поиск</a></li>
+                </ul>
+
+                <div class="dev"><a href="http://bilingo.ru"><img src="images/bilingo.png" alt="" width="79" height="27" /></a></div>
+            </div>
+        </footer>
+
+    </body>
+</html>
