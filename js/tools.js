@@ -190,6 +190,29 @@ var sliderTimer     = null;
             e.preventDefault();
         });
 
+        $('.project-photo-preview a').click(function(e) {
+            var curLink = $(this);
+            var curLi = curLink.parent();
+            if (!curLi.hasClass('active')) {
+                $('.project-photo-big img').attr('src', curLink.attr('href'));
+                $('.project-photo-preview li.active').removeClass('active');
+                curLi.addClass('active');
+            }
+            e.preventDefault();
+        });
+
+        $('.link-more').click(function(e) {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+            curLink.toggleClass('active');
+
+            $('#' + curLink.attr('rev')).slideToggle();
+
+            e.preventDefault();
+        });
+
     });
 
 })(jQuery);
