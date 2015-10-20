@@ -1,0 +1,37 @@
+.top,
+.header-cart,
+nav,
+.catalogue-menu,
+.filter,
+.pager,
+.footer-social,
+.footer-menu,
+.dev,
+.main-catalogue-tabs,
+form,
+.form-error,
+.slider,
+.events,
+.main-middle-all,
+.prefs-item-icon,
+.breadcrumbs,
+.product-prev,
+.product-next,
+.detail-photo-preview,
+#ya_share_counter2,
+#ya_share_counter,
+.link-to-cart,
+.link-more,
+.project-photo-preview {display:none}
+
+a {text-decoration:none !important; color:#000 !important}
+
+.catalogue-content {float:none; width:auto}
+
+.manufacturers-list,
+.more {display:block !important}
+.manufacturers-more-open,
+.manufacturers-more-close {display:none !important}
+
+.prefs-title,
+.prefs-item-text {color:#000}

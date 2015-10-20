@@ -145,6 +145,8 @@ var sliderTimer     = null;
             email: 'Введен некорректный e-mail'
         });
 
+        $('.form-select select, .filter-select select').chosen({disable_search: true, placeholder_text_multiple: ' ', no_results_text: 'Не найдено вариантов'});
+
         $('form').each(function() {
             $(this).validate({
               invalidHandler: function(form, validatorcalc) {
@@ -209,6 +211,30 @@ var sliderTimer     = null;
             curLink.toggleClass('active');
 
             $('#' + curLink.attr('rev')).slideToggle();
+
+            e.preventDefault();
+        });
+
+        $('.filter-checkbox input:checked').parent().addClass('checked');
+        $('.filter-checkbox').click(function() {
+            $(this).toggleClass('checked');
+            $(this).find('input').prop('checked', $(this).hasClass('checked')).trigger('change');
+        });
+
+        $('.filter-reset input').click(function() {
+            window.setTimeout(function() {
+                $('.filter-checkbox.checked').removeClass('checked');
+                $('.filter-checkbox input:checked').parent().addClass('checked');
+            }, 100);
+        });
+
+        $('.filter-show a').click(function(e) {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+
+            $('.filter').toggleClass('open');
 
             e.preventDefault();
         });

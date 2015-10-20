@@ -6,8 +6,13 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic" />
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
 
         <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=1000" />
@@ -144,6 +149,268 @@
 
                         <!-- catalogue content -->
                         <div class="catalogue-content">
+
+                            <!-- filter -->
+                            <div class="filter open">
+                                <form action="#" method="get">
+                                    <div class="filter-row">
+                                        <div class="filter-label">Стиль</div>
+                                        <div class="filter-field">
+                                            <div class="filter-checkbox"><input type="checkbox" name="styleAll" checked="checked" /><span>все</span></div>
+                                            <div class="filter-checkbox"><input type="checkbox" name="style1" /><span>классика</span></div>
+                                            <div class="filter-checkbox"><input type="checkbox" name="style2" /><span>модерн</span></div>
+                                            <div class="filter-checkbox"><input type="checkbox" name="style3" /><span>для вдохновения</span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-row filter-row-developer">
+                                        <div class="filter-label">производитель</div>
+                                        <div class="filter-field">
+                                            <div class="filter-select">
+                                                <select name="producer" multiple="multiple">
+                                                    <option value="1">ACCADEMIA DEL MOBILE</option>
+                                                    <option value="2">ADILE DIVANI</option>
+                                                    <option value="3">ALBED</option>
+                                                    <option value="4">ALF</option>
+                                                    <option value="5">ALIVAR</option>
+                                                    <option value="6">ALT LUCIALTERNATIVE</option>
+                                                    <option value="7">A&amp;M GHEZZANI</option>
+                                                    <option value="8">ANGELO CAPPELLINI</option>
+                                                    <option value="9">ANNIBALE COLOMBO</option>
+                                                    <option value="10">ANTEALUCE</option>
+                                                    <option value="11">ANTICA FALEGNAMERIA</option>
+                                                    <option value="12">ARRITAL CUCINE</option>
+                                                    <option value="13">ARKETIPO</option>
+                                                    <option value="14">ARROS GROUP</option>
+                                                    <option value="15">ARTE BROTTO</option>
+                                                    <option value="16">ARTEMIDE</option>
+                                                    <option value="17">ARTE STUDIO</option>
+                                                    <option value="18">ATA CUCINE</option>
+                                                    <option value="19">AXIAN</option>
+                                                    <option value="20">BABINI</option>
+                                                    <option value="21">BADARI LIGHTING</option>
+                                                    <option value="22">BAGA</option>
+                                                    <option value="23">BAMAX</option>
+                                                    <option value="24">BANCI</option>
+                                                    <option value="25">BARNINI OSEO</option>
+                                                    <option value="26">BAXTER</option>
+                                                    <option value="27">BEBY GROUP</option>
+                                                    <option value="28">BENEDETTI</option>
+                                                    <option value="29">BERRETTA</option>
+                                                    <option value="30">BISAZZA</option>
+                                                    <option value="31">BIZZOTTO</option>
+                                                    <option value="32">BOVA</option>
+                                                    <option value="33">BROGIATO</option>
+                                                    <option value="34">BRUMMEL</option>
+                                                    <option value="35">BUSATTO</option>
+                                                    <option value="36">BUSATTO CUCINE/BAGNI</option>
+                                                    <option value="37">CA D'ORO</option>
+                                                    <option value="38">CALLIGARIS</option>
+                                                    <option value="39">CAMAR MOBILI</option>
+                                                    <option value="40">CAMELGROUP</option>
+                                                    <option value="41">CANTIERO</option>
+                                                    <option value="42">CAPPELLETTI</option>
+                                                    <option value="43">CARPANELLI</option>
+                                                    <option value="44">CASANOVA</option>
+                                                    <option value="45">СASTELLAN</option>
+                                                    <option value="46">CATTELAN ITALIA</option>
+                                                    <option value="47">СAVA</option>
+                                                    <option value="48">CHELINI</option>
+                                                    <option value="49">CIB</option>
+                                                    <option value="50">CIERRE</option>
+                                                    <option value="51">COMPOSIT</option>
+                                                    <option value="52">CORAZZIN</option>
+                                                    <option value="53">CORTE ZARI</option>
+                                                    <option value="54">CP MOBILI</option>
+                                                    <option value="55">СREAZIONI</option>
+                                                    <option value="56">CUCINESSE</option>
+                                                    <option value="57">DE ANGELI</option>
+                                                    <option value="58">DELLA ROVERE</option>
+                                                    <option value="59">DESI (DE&MA)</option>
+                                                    <option value="60">DIELLE (DOIMO)</option>
+                                                    <option value="61">DOIMO DECOR ( X 7,55 )</option>
+                                                    <option value="62">DOIMO IDEA - DOIMO LA NOTTE</option>
+                                                    <option value="63">DOIMO MATERASSI</option>
+                                                    <option value="64">DOIMO SALOTTI</option>
+                                                    <option value="65">DOIMO SOFAS</option>
+                                                    <option value="66">DOIMO SOFAS RELAXTIME</option>
+                                                    <option value="67">DOMINGO</option>
+                                                    <option value="68">DUE G</option>
+                                                    <option value="69">EGOZEROVENTIQUATTRO</option>
+                                                    <option value="70">ELLEDUE ARREDAMENTI</option>
+                                                    <option value="71">ELICA</option>
+                                                    <option value="72">EUROLAMPART</option>
+                                                    <option value="73">EVVE</option>
+                                                    <option value="74">FABAS</option>
+                                                    <option value="75">FALPER</option>
+                                                    <option value="76">FAOMA</option>
+                                                    <option value="77">FAUSTIG</option>
+                                                    <option value="78">FAVERO</option>
+                                                    <option value="79">FBL</option>
+                                                    <option value="80">FBS</option>
+                                                    <option value="81">FENDI CASA</option>
+                                                    <option value="82">F&amp;F</option>
+                                                    <option value="83">FLAI</option>
+                                                    <option value="84">F.LLI RADICЕ</option>
+                                                    <option value="85">FLORENCE COLLECTIONS</option>
+                                                    <option value="86">FLORIDA</option>
+                                                    <option value="87">FORMER</option>
+                                                    <option value="88">FORMITALIA</option>
+                                                    <option value="89">FOSCARINI</option>
+                                                    <option value="90">FREZZA</option>
+                                                    <option value="91">FRIGHETTO</option>
+                                                    <option value="92">GALIMBERTI NINO</option>
+                                                    <option value="93">GALLERY</option>
+                                                    <option value="94">GB GROUP</option>
+                                                    <option value="95">G E D CUCINE</option>
+                                                    <option value="96">GIORGETTI</option>
+                                                    <option value="97">GIUSTI PORTOS</option>
+                                                    <option value="98">GREGGIO MASSIMO</option>
+                                                    <option value="99">HALLEY</option>
+                                                    <option value="100">HALLEY JUNIOR</option>
+                                                    <option value="101">HENGE</option>
+                                                    <option value="102">HOME DECOR</option>
+                                                    <option value="103">IGUZZINI</option>
+                                                    <option value="104">IL FALEGNAME</option>
+                                                    <option value="105">IL VILLAGGIO DEL MOBILE</option>
+                                                    <option value="106">IPE CAVALLI</option>
+                                                    <option value="107">ITALAMP</option>
+                                                    <option value="108">ITALAMP - TOUCH DESIGN</option>
+                                                    <option value="109">ITALCOMMA</option>
+                                                    <option value="110">ITALCOMMA-URBINATI</option>
+                                                    <option value="111">JULIA ARREDAMENTI</option>
+                                                    <option value="112">JUMBO</option>
+                                                    <option value="113">KHAOS</option>
+                                                    <option value="114">L ARTES</option>
+                                                    <option value="115">LC</option>
+                                                    <option value="116">LA MURRINA</option>
+                                                    <option value="117">LEADER CUCINE (FLORIDA)</option>
+                                                    <option value="118">LES COUSINS</option>
+                                                    <option value="119">LEUCOS</option>
+                                                    <option value="120">LIGNARIUS</option>
+                                                    <option value="121">LINFA</option>
+                                                    <option value="122">LITTER</option>
+                                                    <option value="123">MARCHETTI</option>
+                                                    <option value="124">MATHIAS</option>
+                                                    <option value="125">MECHINI</option>
+                                                    <option value="126">MEDEA</option>
+                                                    <option value="127">MERIDIANI</option>
+                                                    <option value="128">MESON S</option>
+                                                    <option value="129">MIMO</option>
+                                                    <option value="130">MINACCIOLO</option>
+                                                    <option value="131">MINITALLUX (ICONE + EOS)</option>
+                                                    <option value="132">MINOTTI LUIGI&amp;BENIGNO</option>
+                                                    <option value="133">MISURA EMME</option>
+                                                    <option value="134">MOBILBRACCO</option>
+                                                    <option value="135">MOBILDERI</option>
+                                                    <option value="136">MOBILIDEA</option>
+                                                    <option value="137">MODA'</option>
+                                                    <option value="138">MORELLO GIANPAOLO</option>
+                                                    <option value="139">MOVELIGHT</option>
+                                                    <option value="140">MO.WA</option>
+                                                    <option value="141">MURANO DUE</option>
+                                                    <option value="142">NATUZZI</option>
+                                                    <option value="143">NAVA</option>
+                                                    <option value="144">NIERI</option>
+                                                    <option value="145">OF INTERNI</option>
+                                                    <option value="146">OLIVO&GROPPO</option>
+                                                    <option value="147">OVER UP SALOTTI</option>
+                                                    <option value="148">PACINI&amp;CAPPELLINI</option>
+                                                    <option value="149">PAGANELLI</option>
+                                                    <option value="150">PALI</option>
+                                                    <option value="151">PASSERI INTERNATIONAL</option>
+                                                    <option value="152">PEGASO</option>
+                                                    <option value="153">PEGASO - ARTE E STILE</option>
+                                                    <option value="154">PENTAMOBILI</option>
+                                                    <option value="155">PETRA ANTIQUA</option>
+                                                    <option value="156">PIANCA</option>
+                                                    <option value="157">PIBIEMME</option>
+                                                    <option value="158">PIETRELLI</option>
+                                                    <option value="159">PISTOLESI F.LLI</option>
+                                                    <option value="160">POEMO DESIGN</option>
+                                                    <option value="161">POLES</option>
+                                                    <option value="162">POLO</option>
+                                                    <option value="163">PORADA</option>
+                                                    <option value="164">POTOCCO</option>
+                                                    <option value="165">PRANDINA</option>
+                                                    <option value="166">PREALPI</option>
+                                                    <option value="167">PROGETTO BAGNO</option>
+                                                    <option value="168">PROVASI</option>
+                                                    <option value="169">REDAELLI IVANO</option>
+                                                    <option value="170">REFLEX ANGELO</option>
+                                                    <option value="171">RIVA MOBILI D'ARTE</option>
+                                                    <option value="172">SAN GIACOMO</option>
+                                                    <option value="173">SAT</option>
+                                                    <option value="174">SAVIO FIRMINO</option>
+                                                    <option value="175">SCANDAL</option>
+                                                    <option value="176">SCHOENHUBER FRANCHI</option>
+                                                    <option value="177">SIGMA L2</option>
+                                                    <option value="178">SIGNORINI&amp;COCO</option>
+                                                    <option value="179">SILIK</option>
+                                                    <option value="180">SILVANO GRIFONI</option>
+                                                    <option value="181">SMANIA</option>
+                                                    <option value="182">SOLARI</option>
+                                                    <option value="183">SOLMET</option>
+                                                    <option value="184">STARK</option>
+                                                    <option value="185">STELLA DEL MOBILE</option>
+                                                    <option value="186">TAGINA</option>
+                                                    <option value="187">TECHNOGYM</option>
+                                                    <option value="188">TITAN</option>
+                                                    <option value="189">TONIN CASA</option>
+                                                    <option value="190">TRE CI</option>
+                                                    <option value="191">TRE EMME</option>
+                                                    <option value="192">TURRI</option>
+                                                    <option value="193">UNICON</option>
+                                                    <option value="194">VALDERA MOBILI</option>
+                                                    <option value="195">VENERAN</option>
+                                                    <option value="196">VERARDO</option>
+                                                    <option value="197">VISENTIN CASA</option>
+                                                    <option value="198">VISMARA</option>
+                                                    <option value="199">VOLPI</option>
+                                                    <option value="200">VOLTOLINA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-sizes">
+                                        <div class="filter-size">
+                                            <div class="filter-label">Длина, <span>см</span></div>
+                                            <div class="filter-input"><input type="text" name="lengthFrom" value="" placeholder="От" /></div>
+                                            <div class="filter-input"><input type="text" name="lengthTo" value="" placeholder="До" /></div>
+                                        </div>
+                                        <div class="filter-size">
+                                            <div class="filter-label">Высота, <span>см</span></div>
+                                            <div class="filter-input"><input type="text" name="heightFrom" value="" placeholder="От" /></div>
+                                            <div class="filter-input"><input type="text" name="heightTo" value="" placeholder="До" /></div>
+                                        </div>
+                                        <div class="filter-size">
+                                            <div class="filter-label">Глубина, <span>см</span></div>
+                                            <div class="filter-input"><input type="text" name="depthFrom" value="" placeholder="От" /></div>
+                                            <div class="filter-input"><input type="text" name="depthTo" value="" placeholder="До" /></div>
+                                        </div>
+                                        <div class="filter-size">
+                                            <div class="filter-label">Диаметр, <span>см</span></div>
+                                            <div class="filter-input"><input type="text" name="diameterFrom" value="" placeholder="От" /></div>
+                                            <div class="filter-input"><input type="text" name="diameterTo" value="" placeholder="До" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-row">
+                                        <div class="filter-label">Название</div>
+                                        <div class="filter-field">
+                                            <div class="filter-input"><input type="text" name="name" value="" /></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-ctrl">
+                                        <div class="filter-show"><a href="#" rel="Развернуть фильтр">Свернуть фильтр</a></div>
+                                        <div class="filter-submit"><input type="submit" value="Найти" /></div>
+                                        <div class="filter-reset"><input type="reset" value="сбросить фильтр" /></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- filter END -->
 
                             <!-- pager -->
                             <div class="pager">
