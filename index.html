@@ -47,7 +47,40 @@
                 <header>
                     <div class="logo"><img src="images/logo.png" alt="" width="420" height="40" /></div>
                     <div class="header-phones">+7 (916) 697-45-85 <span>/</span> +7 (985) 123-18-92</div>
-                    <div class="header-cart"><a href="#">В запросе: <span>3 товара</span></a></div>
+                    <div class="header-cart">
+                        <a href="#" class="header-cart-link">В запросе: <span>3 товара</span></a>
+                        <div class="header-cart-list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="header-cart-photo"><img src="files/cart-1.jpg" alt="" width="60" height="40" /></td>
+                                        <td class="header-cart-text">
+                                            <div class="header-cart-name"><a href="#">Пуф Monseigeur</a></div>
+                                            New Design Porte<br />Межкомнатные перегородки
+                                        </td>
+                                        <td class="header-cart-art">A234-2324</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="header-cart-photo"><img src="files/cart-2.jpg" alt="" width="60" height="40" /></td>
+                                        <td class="header-cart-text">
+                                            <div class="header-cart-name"><a href="#">Стол Kless</a></div>
+                                            New Design Porte<br />Межкомнатные перегородки
+                                        </td>
+                                        <td class="header-cart-art">FD768-2276</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="header-cart-photo"><img src="files/cart-3.jpg" alt="" width="60" height="40" /></td>
+                                        <td class="header-cart-text">
+                                            <div class="header-cart-name"><a href="#">Диван Monada</a></div>
+                                            Driade<br />Диваны, кровати
+                                        </td>
+                                        <td class="header-cart-art">B76-243</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="header-cart-order">Оформить запрос</a>
+                        </div>
+                    </div>
                 </header>
 
                 <nav>
@@ -235,286 +268,330 @@
                             </div>
                             <div class="manufacturers-list-cols">
                                 <div class="manufacturers-list-col">
-                                    <div data-letter="A">A</div>
-                                    <ul data-letter="A">
-                                        <li><a href="#">ACCADEMIA DEL MOBILE</a></li>
-                                        <li><a href="#">ADILE DIVANI</a></li>
-                                        <li><a href="#">ALBED</a></li>
-                                        <li><a href="#">ALF</a></li>
-                                        <li><a href="#">ALIVAR</a></li>
-                                        <li><a href="#">ALT LUCIALTERNATIVE</a></li>
-                                        <li><a href="#">A&amp;M GHEZZANI</a></li>
-                                        <li><a href="#">ANGELO CAPPELLINI</a></li>
-                                        <li><a href="#">ANNIBALE COLOMBO</a></li>
-                                        <li><a href="#">ANTEALUCE</a></li>
-                                        <li><a href="#">ANTICA FALEGNAMERIA</a></li>
-                                        <li><a href="#">ARRITAL CUCINE</a></li>
-                                        <li><a href="#">ARKETIPO</a></li>
-                                        <li><a href="#">ARROS GROUP</a></li>
-                                        <li><a href="#">ARTE BROTTO</a></li>
-                                        <li><a href="#">ARTEMIDE</a></li>
-                                        <li><a href="#">ARTE STUDIO</a></li>
-                                        <li><a href="#">ATA CUCINE</a></li>
-                                        <li><a href="#">AXIAN</a></li>
-                                    </ul>
-                                    <div data-letter="B">B</div>
-                                    <ul data-letter="B">
-                                        <li><a href="#">BABINI</a></li>
-                                        <li><a href="#">BADARI LIGHTING</a></li>
-                                        <li><a href="#">BAGA</a></li>
-                                        <li><a href="#">BAMAX</a></li>
-                                        <li><a href="#">BANCI</a></li>
-                                        <li><a href="#">BARNINI OSEO</a></li>
-                                        <li><a href="#">BAXTER</a></li>
-                                        <li><a href="#">BEBY GROUP</a></li>
-                                        <li><a href="#">BENEDETTI</a></li>
-                                        <li><a href="#">BERRETTA</a></li>
-                                        <li><a href="#">BISAZZA</a></li>
-                                        <li><a href="#">BIZZOTTO</a></li>
-                                        <li><a href="#">BOVA</a></li>
-                                        <li><a href="#">BROGIATO</a></li>
-                                        <li><a href="#">BRUMMEL</a></li>
-                                        <li><a href="#">BUSATTO</a></li>
-                                        <li><a href="#">BUSATTO CUCINE/BAGNI</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="A">A</div>
+                                        <ul data-letter="A">
+                                            <li><a href="#">ACCADEMIA DEL MOBILE</a></li>
+                                            <li><a href="#">ADILE DIVANI</a></li>
+                                            <li><a href="#">ALBED</a></li>
+                                            <li><a href="#">ALF</a></li>
+                                            <li><a href="#">ALIVAR</a></li>
+                                            <li><a href="#">ALT LUCIALTERNATIVE</a></li>
+                                            <li><a href="#">A&amp;M GHEZZANI</a></li>
+                                            <li><a href="#">ANGELO CAPPELLINI</a></li>
+                                            <li><a href="#">ANNIBALE COLOMBO</a></li>
+                                            <li><a href="#">ANTEALUCE</a></li>
+                                            <li><a href="#">ANTICA FALEGNAMERIA</a></li>
+                                            <li><a href="#">ARRITAL CUCINE</a></li>
+                                            <li><a href="#">ARKETIPO</a></li>
+                                            <li><a href="#">ARROS GROUP</a></li>
+                                            <li><a href="#">ARTE BROTTO</a></li>
+                                            <li><a href="#">ARTEMIDE</a></li>
+                                            <li><a href="#">ARTE STUDIO</a></li>
+                                            <li><a href="#">ATA CUCINE</a></li>
+                                            <li><a href="#">AXIAN</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="B">B</div>
+                                        <ul data-letter="B">
+                                            <li><a href="#">BABINI</a></li>
+                                            <li><a href="#">BADARI LIGHTING</a></li>
+                                            <li><a href="#">BAGA</a></li>
+                                            <li><a href="#">BAMAX</a></li>
+                                            <li><a href="#">BANCI</a></li>
+                                            <li><a href="#">BARNINI OSEO</a></li>
+                                            <li><a href="#">BAXTER</a></li>
+                                            <li><a href="#">BEBY GROUP</a></li>
+                                            <li><a href="#">BENEDETTI</a></li>
+                                            <li><a href="#">BERRETTA</a></li>
+                                            <li><a href="#">BISAZZA</a></li>
+                                            <li><a href="#">BIZZOTTO</a></li>
+                                            <li><a href="#">BOVA</a></li>
+                                            <li><a href="#">BROGIATO</a></li>
+                                            <li><a href="#">BRUMMEL</a></li>
+                                            <li><a href="#">BUSATTO</a></li>
+                                            <li><a href="#">BUSATTO CUCINE/BAGNI</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="manufacturers-list-col">
-                                    <div data-letter="C">C</div>
-                                    <ul data-letter="C">
-                                        <li><a href="#">CA D'ORO</a></li>
-                                        <li><a href="#">CALLIGARIS</a></li>
-                                        <li><a href="#">CAMAR MOBILI</a></li>
-                                        <li><a href="#">CAMELGROUP</a></li>
-                                        <li><a href="#">CANTIERO</a></li>
-                                        <li><a href="#">CAPPELLETTI</a></li>
-                                        <li><a href="#">CARPANELLI</a></li>
-                                        <li><a href="#">CASANOVA</a></li>
-                                        <li><a href="#">СASTELLAN</a></li>
-                                        <li><a href="#">CATTELAN ITALIA</a></li>
-                                        <li><a href="#">СAVA</a></li>
-                                        <li><a href="#">CHELINI</a></li>
-                                        <li><a href="#">CIB</a></li>
-                                        <li><a href="#">CIERRE</a></li>
-                                        <li><a href="#">COMPOSIT</a></li>
-                                        <li><a href="#">CORAZZIN</a></li>
-                                        <li><a href="#">CORTE ZARI</a></li>
-                                        <li><a href="#">CP MOBILI</a></li>
-                                        <li><a href="#">СREAZIONI</a></li>
-                                        <li><a href="#">CUCINESSE</a></li>
-                                    </ul>
-                                    <div data-letter="D">D</div>
-                                    <ul data-letter="D">
-                                        <li><a href="#">DE ANGELI</a></li>
-                                        <li><a href="#">DELLA ROVERE</a></li>
-                                        <li><a href="#">DESI (DE&MA)</a></li>
-                                        <li><a href="#">DIELLE (DOIMO)</a></li>
-                                        <li><a href="#">DOIMO DECOR ( X 7,55 )</a></li>
-                                        <li><a href="#">DOIMO IDEA - DOIMO LA NOTTE</a></li>
-                                        <li><a href="#">DOIMO MATERASSI</a></li>
-                                        <li><a href="#">DOIMO SALOTTI</a></li>
-                                        <li><a href="#">DOIMO SOFAS</a></li>
-                                        <li><a href="#">DOIMO SOFAS RELAXTIME</a></li>
-                                        <li><a href="#">DOMINGO</a></li>
-                                        <li><a href="#">DUE G</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="C">C</div>
+                                        <ul data-letter="C">
+                                            <li><a href="#">CA D'ORO</a></li>
+                                            <li><a href="#">CALLIGARIS</a></li>
+                                            <li><a href="#">CAMAR MOBILI</a></li>
+                                            <li><a href="#">CAMELGROUP</a></li>
+                                            <li><a href="#">CANTIERO</a></li>
+                                            <li><a href="#">CAPPELLETTI</a></li>
+                                            <li><a href="#">CARPANELLI</a></li>
+                                            <li><a href="#">CASANOVA</a></li>
+                                            <li><a href="#">СASTELLAN</a></li>
+                                            <li><a href="#">CATTELAN ITALIA</a></li>
+                                            <li><a href="#">СAVA</a></li>
+                                            <li><a href="#">CHELINI</a></li>
+                                            <li><a href="#">CIB</a></li>
+                                            <li><a href="#">CIERRE</a></li>
+                                            <li><a href="#">COMPOSIT</a></li>
+                                            <li><a href="#">CORAZZIN</a></li>
+                                            <li><a href="#">CORTE ZARI</a></li>
+                                            <li><a href="#">CP MOBILI</a></li>
+                                            <li><a href="#">СREAZIONI</a></li>
+                                            <li><a href="#">CUCINESSE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="D">D</div>
+                                        <ul data-letter="D">
+                                            <li><a href="#">DE ANGELI</a></li>
+                                            <li><a href="#">DELLA ROVERE</a></li>
+                                            <li><a href="#">DESI (DE&MA)</a></li>
+                                            <li><a href="#">DIELLE (DOIMO)</a></li>
+                                            <li><a href="#">DOIMO DECOR ( X 7,55 )</a></li>
+                                            <li><a href="#">DOIMO IDEA - DOIMO LA NOTTE</a></li>
+                                            <li><a href="#">DOIMO MATERASSI</a></li>
+                                            <li><a href="#">DOIMO SALOTTI</a></li>
+                                            <li><a href="#">DOIMO SOFAS</a></li>
+                                            <li><a href="#">DOIMO SOFAS RELAXTIME</a></li>
+                                            <li><a href="#">DOMINGO</a></li>
+                                            <li><a href="#">DUE G</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="manufacturers-list-col">
-                                    <div data-letter="E">E</div>
-                                    <ul data-letter="E">
-                                        <li><a href="#">EGOZEROVENTIQUATTRO</a></li>
-                                        <li><a href="#">ELLEDUE ARREDAMENTI</a></li>
-                                        <li><a href="#">ELICA</a></li>
-                                        <li><a href="#">EUROLAMPART</a></li>
-                                        <li><a href="#">EVVE</a></li>
-                                    </ul>
-                                    <div data-letter="F">F</div>
-                                    <ul data-letter="F">
-                                        <li><a href="#">FABAS</a></li>
-                                        <li><a href="#">FALPER</a></li>
-                                        <li><a href="#">FAOMA</a></li>
-                                        <li><a href="#">FAUSTIG</a></li>
-                                        <li><a href="#">FAVERO</a></li>
-                                        <li><a href="#">FBL</a></li>
-                                        <li><a href="#">FBS</a></li>
-                                        <li><a href="#">FENDI CASA</a></li>
-                                        <li><a href="#">F&amp;F</a></li>
-                                        <li><a href="#">FLAI</a></li>
-                                        <li><a href="#">F.LLI RADICЕ</a></li>
-                                        <li><a href="#">FLORENCE COLLECTIONS</a></li>
-                                        <li><a href="#">FLORIDA</a></li>
-                                        <li><a href="#">FORMER</a></li>
-                                        <li><a href="#">FORMITALIA</a></li>
-                                        <li><a href="#">FOSCARINI</a></li>
-                                        <li><a href="#">FREZZA</a></li>
-                                        <li><a href="#">FRIGHETTO</a></li>
-                                    </ul>
-                                    <div data-letter="G">G</div>
-                                    <ul data-letter="G">
-                                        <li><a href="#">GALIMBERTI NINO</a></li>
-                                        <li><a href="#">GALLERY</a></li>
-                                        <li><a href="#">GB GROUP</a></li>
-                                        <li><a href="#">G E D CUCINE</a></li>
-                                        <li><a href="#">GIORGETTI</a></li>
-                                        <li><a href="#">GIUSTI PORTOS</a></li>
-                                        <li><a href="#">GREGGIO MASSIMO</a></li>
-                                    </ul>
-                                    <div data-letter="H">H</div>
-                                    <ul data-letter="H">
-                                        <li><a href="#">HALLEY</a></li>
-                                        <li><a href="#">HALLEY JUNIOR</a></li>
-                                        <li><a href="#">HENGE</a></li>
-                                        <li><a href="#">HOME DECOR</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="E">E</div>
+                                        <ul data-letter="E">
+                                            <li><a href="#">EGOZEROVENTIQUATTRO</a></li>
+                                            <li><a href="#">ELLEDUE ARREDAMENTI</a></li>
+                                            <li><a href="#">ELICA</a></li>
+                                            <li><a href="#">EUROLAMPART</a></li>
+                                            <li><a href="#">EVVE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="F">F</div>
+                                        <ul data-letter="F">
+                                            <li><a href="#">FABAS</a></li>
+                                            <li><a href="#">FALPER</a></li>
+                                            <li><a href="#">FAOMA</a></li>
+                                            <li><a href="#">FAUSTIG</a></li>
+                                            <li><a href="#">FAVERO</a></li>
+                                            <li><a href="#">FBL</a></li>
+                                            <li><a href="#">FBS</a></li>
+                                            <li><a href="#">FENDI CASA</a></li>
+                                            <li><a href="#">F&amp;F</a></li>
+                                            <li><a href="#">FLAI</a></li>
+                                            <li><a href="#">F.LLI RADICЕ</a></li>
+                                            <li><a href="#">FLORENCE COLLECTIONS</a></li>
+                                            <li><a href="#">FLORIDA</a></li>
+                                            <li><a href="#">FORMER</a></li>
+                                            <li><a href="#">FORMITALIA</a></li>
+                                            <li><a href="#">FOSCARINI</a></li>
+                                            <li><a href="#">FREZZA</a></li>
+                                            <li><a href="#">FRIGHETTO</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="G">G</div>
+                                        <ul data-letter="G">
+                                            <li><a href="#">GALIMBERTI NINO</a></li>
+                                            <li><a href="#">GALLERY</a></li>
+                                            <li><a href="#">GB GROUP</a></li>
+                                            <li><a href="#">G E D CUCINE</a></li>
+                                            <li><a href="#">GIORGETTI</a></li>
+                                            <li><a href="#">GIUSTI PORTOS</a></li>
+                                            <li><a href="#">GREGGIO MASSIMO</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="H">H</div>
+                                        <ul data-letter="H">
+                                            <li><a href="#">HALLEY</a></li>
+                                            <li><a href="#">HALLEY JUNIOR</a></li>
+                                            <li><a href="#">HENGE</a></li>
+                                            <li><a href="#">HOME DECOR</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="manufacturers-list-col">
-                                    <div data-letter="I">I</div>
-                                    <ul data-letter="I">
-                                        <li><a href="#">IGUZZINI</a></li>
-                                        <li><a href="#">IL FALEGNAME</a></li>
-                                        <li><a href="#">IL VILLAGGIO DEL MOBILE</a></li>
-                                        <li><a href="#">IPE CAVALLI</a></li>
-                                        <li><a href="#">ITALAMP</a></li>
-                                        <li><a href="#">ITALAMP - TOUCH DESIGN</a></li>
-                                        <li><a href="#">ITALCOMMA</a></li>
-                                        <li><a href="#">ITALCOMMA-URBINATI</a></li>
-                                    </ul>
-                                    <div data-letter="J">J</div>
-                                    <ul data-letter="J">
-                                        <li><a href="#">JULIA ARREDAMENTI</a></li>
-                                        <li><a href="#">JUMBO</a></li>
-                                    </ul>
-                                    <div data-letter="K">K</div>
-                                    <ul data-letter="K">
-                                        <li><a href="#">KHAOS</a></li>
-                                    </ul>
-                                    <div data-letter="L">L</div>
-                                    <ul data-letter="L">
-                                        <li><a href="#">L ARTES</a></li>
-                                        <li><a href="#">LC</a></li>
-                                        <li><a href="#">LA MURRINA</a></li>
-                                        <li><a href="#">LEADER CUCINE (FLORIDA)</a></li>
-                                        <li><a href="#">LES COUSINS</a></li>
-                                        <li><a href="#">LEUCOS</a></li>
-                                        <li><a href="#">LIGNARIUS</a></li>
-                                        <li><a href="#">LINFA</a></li>
-                                        <li><a href="#">LITTER</a></li>
-                                    </ul>
-                                    <div data-letter="M">M</div>
-                                    <ul data-letter="M">
-                                        <li><a href="#">MARCHETTI</a></li>
-                                        <li><a href="#">MATHIAS</a></li>
-                                        <li><a href="#">MECHINI</a></li>
-                                        <li><a href="#">MEDEA</a></li>
-                                        <li><a href="#">MERIDIANI</a></li>
-                                        <li><a href="#">MESON S</a></li>
-                                        <li><a href="#">MIMO</a></li>
-                                        <li><a href="#">MINACCIOLO</a></li>
-                                        <li><a href="#">MINITALLUX (ICONE + EOS)</a></li>
-                                        <li><a href="#">MINOTTI LUIGI&amp;BENIGNO</a></li>
-                                        <li><a href="#">MISURA EMME</a></li>
-                                        <li><a href="#">MOBILBRACCO</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="I">I</div>
+                                        <ul data-letter="I">
+                                            <li><a href="#">IGUZZINI</a></li>
+                                            <li><a href="#">IL FALEGNAME</a></li>
+                                            <li><a href="#">IL VILLAGGIO DEL MOBILE</a></li>
+                                            <li><a href="#">IPE CAVALLI</a></li>
+                                            <li><a href="#">ITALAMP</a></li>
+                                            <li><a href="#">ITALAMP - TOUCH DESIGN</a></li>
+                                            <li><a href="#">ITALCOMMA</a></li>
+                                            <li><a href="#">ITALCOMMA-URBINATI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="J">J</div>
+                                        <ul data-letter="J">
+                                            <li><a href="#">JULIA ARREDAMENTI</a></li>
+                                            <li><a href="#">JUMBO</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="K">K</div>
+                                        <ul data-letter="K">
+                                            <li><a href="#">KHAOS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="L">L</div>
+                                        <ul data-letter="L">
+                                            <li><a href="#">L ARTES</a></li>
+                                            <li><a href="#">LC</a></li>
+                                            <li><a href="#">LA MURRINA</a></li>
+                                            <li><a href="#">LEADER CUCINE (FLORIDA)</a></li>
+                                            <li><a href="#">LES COUSINS</a></li>
+                                            <li><a href="#">LEUCOS</a></li>
+                                            <li><a href="#">LIGNARIUS</a></li>
+                                            <li><a href="#">LINFA</a></li>
+                                            <li><a href="#">LITTER</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="M">M</div>
+                                        <ul data-letter="M">
+                                            <li><a href="#">MARCHETTI</a></li>
+                                            <li><a href="#">MATHIAS</a></li>
+                                            <li><a href="#">MECHINI</a></li>
+                                            <li><a href="#">MEDEA</a></li>
+                                            <li><a href="#">MERIDIANI</a></li>
+                                            <li><a href="#">MESON S</a></li>
+                                            <li><a href="#">MIMO</a></li>
+                                            <li><a href="#">MINACCIOLO</a></li>
+                                            <li><a href="#">MINITALLUX (ICONE + EOS)</a></li>
+                                            <li><a href="#">MINOTTI LUIGI&amp;BENIGNO</a></li>
+                                            <li><a href="#">MISURA EMME</a></li>
+                                            <li><a href="#">MOBILBRACCO</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="manufacturers-list-col">
-                                    <ul data-letter="M">
-                                        <li><a href="#">MOBILDERI</a></li>
-                                        <li><a href="#">MOBILIDEA</a></li>
-                                        <li><a href="#">MODA'</a></li>
-                                        <li><a href="#">MORELLO GIANPAOLO</a></li>
-                                        <li><a href="#">MOVELIGHT</a></li>
-                                        <li><a href="#">MO.WA</a></li>
-                                        <li><a href="#">MURANO DUE</a></li>
-                                    </ul>
-                                    <div data-letter="N">N</div>
-                                    <ul data-letter="N">
-                                        <li><a href="#">NATUZZI</a></li>
-                                        <li><a href="#">NAVA</a></li>
-                                        <li><a href="#">NIERI</a></li>
-                                    </ul>
-                                    <div data-letter="O">O</div>
-                                    <ul data-letter="O">
-                                        <li><a href="#">OF INTERNI</a></li>
-                                        <li><a href="#">OLIVO&GROPPO</a></li>
-                                        <li><a href="#">OVER UP SALOTTI</a></li>
-                                    </ul>
-                                    <div data-letter="P">P</div>
-                                    <ul data-letter="P">
-                                        <li><a href="#">PACINI&amp;CAPPELLINI</a></li>
-                                        <li><a href="#">PAGANELLI</a></li>
-                                        <li><a href="#">PALI</a></li>
-                                        <li><a href="#">PASSERI INTERNATIONAL</a></li>
-                                        <li><a href="#">PEGASO</a></li>
-                                        <li><a href="#">PEGASO - ARTE E STILE</a></li>
-                                        <li><a href="#">PENTAMOBILI</a></li>
-                                        <li><a href="#">PETRA ANTIQUA</a></li>
-                                        <li><a href="#">PIANCA</a></li>
-                                        <li><a href="#">PIBIEMME</a></li>
-                                        <li><a href="#">PIETRELLI</a></li>
-                                        <li><a href="#">PISTOLESI F.LLI</a></li>
-                                        <li><a href="#">POEMO DESIGN</a></li>
-                                        <li><a href="#">POLES</a></li>
-                                        <li><a href="#">POLO</a></li>
-                                        <li><a href="#">PORADA</a></li>
-                                        <li><a href="#">POTOCCO</a></li>
-                                        <li><a href="#">PRANDINA</a></li>
-                                        <li><a href="#">PREALPI</a></li>
-                                        <li><a href="#">PROGETTO BAGNO</a></li>
-                                        <li><a href="#">PROVASI</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <ul data-letter="M">
+                                            <li><a href="#">MOBILDERI</a></li>
+                                            <li><a href="#">MOBILIDEA</a></li>
+                                            <li><a href="#">MODA'</a></li>
+                                            <li><a href="#">MORELLO GIANPAOLO</a></li>
+                                            <li><a href="#">MOVELIGHT</a></li>
+                                            <li><a href="#">MO.WA</a></li>
+                                            <li><a href="#">MURANO DUE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="N">N</div>
+                                        <ul data-letter="N">
+                                            <li><a href="#">NATUZZI</a></li>
+                                            <li><a href="#">NAVA</a></li>
+                                            <li><a href="#">NIERI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="O">O</div>
+                                        <ul data-letter="O">
+                                            <li><a href="#">OF INTERNI</a></li>
+                                            <li><a href="#">OLIVO&GROPPO</a></li>
+                                            <li><a href="#">OVER UP SALOTTI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="P">P</div>
+                                        <ul data-letter="P">
+                                            <li><a href="#">PACINI&amp;CAPPELLINI</a></li>
+                                            <li><a href="#">PAGANELLI</a></li>
+                                            <li><a href="#">PALI</a></li>
+                                            <li><a href="#">PASSERI INTERNATIONAL</a></li>
+                                            <li><a href="#">PEGASO</a></li>
+                                            <li><a href="#">PEGASO - ARTE E STILE</a></li>
+                                            <li><a href="#">PENTAMOBILI</a></li>
+                                            <li><a href="#">PETRA ANTIQUA</a></li>
+                                            <li><a href="#">PIANCA</a></li>
+                                            <li><a href="#">PIBIEMME</a></li>
+                                            <li><a href="#">PIETRELLI</a></li>
+                                            <li><a href="#">PISTOLESI F.LLI</a></li>
+                                            <li><a href="#">POEMO DESIGN</a></li>
+                                            <li><a href="#">POLES</a></li>
+                                            <li><a href="#">POLO</a></li>
+                                            <li><a href="#">PORADA</a></li>
+                                            <li><a href="#">POTOCCO</a></li>
+                                            <li><a href="#">PRANDINA</a></li>
+                                            <li><a href="#">PREALPI</a></li>
+                                            <li><a href="#">PROGETTO BAGNO</a></li>
+                                            <li><a href="#">PROVASI</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="manufacturers-list-col">
-                                    <div data-letter="R">R</div>
-                                    <ul data-letter="R">
-                                        <li><a href="#">REDAELLI IVANO</a></li>
-                                        <li><a href="#">REFLEX ANGELO</a></li>
-                                        <li><a href="#">RIVA MOBILI D'ARTE</a></li>
-                                    </ul>
-                                    <div data-letter="S">S</div>
-                                    <ul data-letter="S">
-                                        <li><a href="#">SAN GIACOMO</a></li>
-                                        <li><a href="#">SAT</a></li>
-                                        <li><a href="#">SAVIO FIRMINO</a></li>
-                                        <li><a href="#">SCANDAL</a></li>
-                                        <li><a href="#">SCHOENHUBER FRANCHI</a></li>
-                                        <li><a href="#">SIGMA L2</a></li>
-                                        <li><a href="#">SIGNORINI&amp;COCO</a></li>
-                                        <li><a href="#">SILIK</a></li>
-                                        <li><a href="#">SILVANO GRIFONI</a></li>
-                                        <li><a href="#">SMANIA</a></li>
-                                        <li><a href="#">SOLARI</a></li>
-                                        <li><a href="#">SOLMET</a></li>
-                                        <li><a href="#">STARK</a></li>
-                                        <li><a href="#">STELLA DEL MOBILE</a></li>
-                                    </ul>
-                                    <div data-letter="T">T</div>
-                                    <ul data-letter="T">
-                                        <li><a href="#">TAGINA</a></li>
-                                        <li><a href="#">TECHNOGYM</a></li>
-                                        <li><a href="#">TITAN</a></li>
-                                        <li><a href="#">TONIN CASA</a></li>
-                                        <li><a href="#">TRE CI</a></li>
-                                        <li><a href="#">TRE EMME</a></li>
-                                        <li><a href="#">TURRI</a></li>
-                                    </ul>
-                                    <div data-letter="U">U</div>
-                                    <ul data-letter="U">
-                                        <li><a href="#">UNICON</a></li>
-                                    </ul>
-                                    <div data-letter="V">V</div>
-                                    <ul data-letter="V">
-                                        <li><a href="#">VALDERA MOBILI</a></li>
-                                        <li><a href="#">VENERAN</a></li>
-                                        <li><a href="#">VERARDO</a></li>
-                                        <li><a href="#">VISENTIN CASA</a></li>
-                                        <li><a href="#">VISMARA</a></li>
-                                        <li><a href="#">VOLPI</a></li>
-                                        <li><a href="#">VOLTOLINA</a></li>
-                                    </ul>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="R">R</div>
+                                        <ul data-letter="R">
+                                            <li><a href="#">REDAELLI IVANO</a></li>
+                                            <li><a href="#">REFLEX ANGELO</a></li>
+                                            <li><a href="#">RIVA MOBILI D'ARTE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="S">S</div>
+                                        <ul data-letter="S">
+                                            <li><a href="#">SAN GIACOMO</a></li>
+                                            <li><a href="#">SAT</a></li>
+                                            <li><a href="#">SAVIO FIRMINO</a></li>
+                                            <li><a href="#">SCANDAL</a></li>
+                                            <li><a href="#">SCHOENHUBER FRANCHI</a></li>
+                                            <li><a href="#">SIGMA L2</a></li>
+                                            <li><a href="#">SIGNORINI&amp;COCO</a></li>
+                                            <li><a href="#">SILIK</a></li>
+                                            <li><a href="#">SILVANO GRIFONI</a></li>
+                                            <li><a href="#">SMANIA</a></li>
+                                            <li><a href="#">SOLARI</a></li>
+                                            <li><a href="#">SOLMET</a></li>
+                                            <li><a href="#">STARK</a></li>
+                                            <li><a href="#">STELLA DEL MOBILE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="T">T</div>
+                                        <ul data-letter="T">
+                                            <li><a href="#">TAGINA</a></li>
+                                            <li><a href="#">TECHNOGYM</a></li>
+                                            <li><a href="#">TITAN</a></li>
+                                            <li><a href="#">TONIN CASA</a></li>
+                                            <li><a href="#">TRE CI</a></li>
+                                            <li><a href="#">TRE EMME</a></li>
+                                            <li><a href="#">TURRI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="U">U</div>
+                                        <ul data-letter="U">
+                                            <li><a href="#">UNICON</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="manufacturers-list-letter">
+                                        <div data-letter="V">V</div>
+                                        <ul data-letter="V">
+                                            <li><a href="#">VALDERA MOBILI</a></li>
+                                            <li><a href="#">VENERAN</a></li>
+                                            <li><a href="#">VERARDO</a></li>
+                                            <li><a href="#">VISENTIN CASA</a></li>
+                                            <li><a href="#">VISMARA</a></li>
+                                            <li><a href="#">VOLPI</a></li>
+                                            <li><a href="#">VOLTOLINA</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

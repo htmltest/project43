@@ -95,14 +95,17 @@ var sliderTimer     = null;
             function() {
                 var curLetter = $(this).data('letter');
                 if (curLetter == '') {
-                    $('.manufacturers-list-col div, .manufacturers-list-col ul').addClass('hover');
+                    $('.manufacturers-list-letter div, .manufacturers-list-letter ul').addClass('hover');
+                    $('.manufacturers-list-letter').addClass('hover');
                 } else {
-                    $('.manufacturers-list-col div[data-letter="' + curLetter + '"], .manufacturers-list-col ul[data-letter="' + curLetter + '"]').addClass('hover');
+                    $('.manufacturers-list-letter div[data-letter="' + curLetter + '"], .manufacturers-list-letter ul[data-letter="' + curLetter + '"]').addClass('hover');
+                    $('.manufacturers-list-letter ul[data-letter="' + curLetter + '"]').parent().addClass('hover');
                 }
             },
 
             function() {
-                $('.manufacturers-list-col div, .manufacturers-list-col ul').removeClass('hover');
+                $('.manufacturers-list-letter div, .manufacturers-list-letter ul').removeClass('hover');
+                $('.manufacturers-list-letter').removeClass('hover');
             }
         );
 
@@ -111,13 +114,16 @@ var sliderTimer     = null;
             var curLi = curLink.parent();
             if (curLi.hasClass('active')) {
                 curLi.removeClass('active');
-                $('.manufacturers-list-col div, .manufacturers-list-col ul').removeClass('active');
+                $('.manufacturers-list-letter div, .manufacturers-list-letter ul').removeClass('active');
+                $('.manufacturers-list-letter').removeClass('active');
             } else {
                 $('.manufacturers-list-letters li.active').removeClass('active');
                 curLi.addClass('active');
                 var curLetter = curLink.data('letter');
-                $('.manufacturers-list-col div, .manufacturers-list-col ul').removeClass('active');
-                $('.manufacturers-list-col div[data-letter="' + curLetter + '"], .manufacturers-list-col ul[data-letter="' + curLetter + '"]').addClass('active');
+                $('.manufacturers-list-letter div, .manufacturers-list-letter ul').removeClass('active');
+                $('.manufacturers-list-letter').removeClass('active');
+                $('.manufacturers-list-letter div[data-letter="' + curLetter + '"], .manufacturers-list-letter ul[data-letter="' + curLetter + '"]').addClass('active');
+                $('.manufacturers-list-letter ul[data-letter="' + curLetter + '"]').parent().addClass('active');
             }
             e.preventDefault();
         });
