@@ -35,3 +35,11 @@ a {text-decoration:none !important; color:#000 !important}
 
 .prefs-title,
 .prefs-item-text {color:#000}
+
+.contacts-col:nth-child(2) {display:none}
+
+.individual-link {display:none}
+
+.item-gallery {display:none}
+.wrapper {margin-top:0 !important}
+body {width:auto !important; height:100% !important; overflow:visible !important}

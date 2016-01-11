@@ -345,7 +345,8 @@ ul.footer-menu li:before {display:none}
 .form-textarea textarea:focus {border-color:#000}
 
 .form-hint {padding:2px 0 0 10px; color:#808080}
-.form-input label.error {color:#cb0a0b; padding:2px 0 0 10px}
+.form-input label.error,
+.form-textarea label.error {color:#cb0a0b; padding:2px 0 0 10px}
 
 .form-checkbox {float:left; padding:0 0 0 27px; position:relative; line-height:17px; cursor:pointer; margin:8px 27px 8px 0}
 .form-checkbox span {display:block; position:absolute; left:0; top:0; width:17px; height:17px; overflow:hidden; background:url(../images/checkbox.png)}
@@ -371,6 +372,9 @@ ul.footer-menu li:before {display:none}
 .form-submit input {vertical-align:top; border:none; border-radius:2px; background:#cb0a0b; overflow:visible; margin:0; padding:0 75px; outline:none; height:40px; color:#fff; text-align:center; cursor:pointer; font:12px/44px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; -webkit-appearance:none}
 .form-submit input:hover {background:#8e0e0f}
 .form-submit input:active {background:#b50c0d}
+
+.form-required {margin:17px 0}
+.form-required span {color:#cb0a0b}
 
 .catalogue {padding:30px 0 0 0}
 .catalogue:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -625,11 +629,95 @@ td.basket-del a {display:block; width:19px; height:19px; background:url(../image
 .article-back-link {margin:-17px 0 -40px 0; font:10px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase; padding:0 0 0 20px; background:url(../images/article-back-link.png) no-repeat left 6px}
 .article-back-link a {text-decoration:none}
 
-.contacts-text {margin:20px 0 32px 0}
+.contacts {margin-top:-5px}
+.contacts:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.contacts-col {float:left; width:280px; padding:0 0 0 50px}
+.contacts-col:first-child {padding:0}
+
+.contacts h1 {margin:0}
+
+.contacts-text {margin:15px 0 0 0}
 .contacts-text dl {margin:0; padding:0}
 .contacts-text dl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.contacts-text dt {float:left; clear:left; width:140px; margin:0; padding:4px 20px 6px 0; text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif}
-.contacts-text dd {float:left; width:780px; margin:0; padding:0 0 6px 0; font-size:14px; color:#272727}
+.contacts-text dt {float:left; clear:left; width:85px; margin:0; padding:4px 10px 10px 0; text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif}
+.contacts-text dd {float:left; width:185px; margin:0; padding:0 0 10px 0; font-size:14px; color:#272727}
 .contacts-text dd a {text-decoration:none}
 
-.contacts-map {height:400px}
+.contacts .content-doc-link {margin:20px 0; background:#f9f9f9; padding:20px}
+
+.contacts-title {text-transform:uppercase; font:20px/20px P22UndergroundCYProBook, "PT Sans", sans-serif}
+.contacts form {margin:-6px 0 0 0}
+.contacts .form-label {float:none; width:auto}
+.contacts .form-field {float:none; width:auto}
+.contacts .form-submit input {padding:0; width:100%}
+
+.team {padding:17px 0 0 0}
+.team-item {border-top:1px solid #dbdbdb; padding:10px 0}
+.team-item:first-child {border:none}
+.team-item:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.team-item-photo {float:left; line-height:0; width:120px}
+.team-item-text {float:right; width:140px; font-size:14px}
+.team-item-name {text-transform:uppercase; font:12px/20px P22UndergroundCYProBook, "PT Sans", sans-serif; padding:2px 0 0 0}
+.team-item-post {margin-top:-3px}
+.team-item-phone {padding-top:10px}
+.team-item-email a {text-decoration:none}
+
+.individual {margin:28px 0 42px 0}
+.individual-title {font:15px/20px P22UndergroundCYProDemi, "PT Sans", sans-serif; text-transform:uppercase; text-align:center}
+.individual-title:after {content:""; display:block; width:30px; height:1px; background:#cb0a0b; margin:19px auto 0 auto}
+.individual-text {text-align:center}
+.individual-gallery {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px}
+.individual-gallery a {display:inline-block; vertical-align:top; border:2px solid #dcdcdc; width:216px; height:216px; position:relative; overflow:hidden; margin:20px 10px; line-height:216px; transition:border-color .5s ease}
+.individual-gallery a:hover {border-color:#c90a0b}
+.individual-gallery a img {vertical-align:middle}
+.individual-gallery-mid a {width:296px; height:196px; line-height:196px}
+.individual-gallery-max a {width:456px; height:296px; line-height:296px}
+
+.individual-link {text-align:center}
+.individual-link a {display:inline-block; vertical-align:top; width:300px; height:40px; border-radius:2px; background:#cb0a0b; color:#fff; text-align:center; font:12px/44px P22UndergroundCYProBook, "PT Sans", sans-serif; text-decoration:none; text-transform:uppercase}
+.individual-link a:hover {background:#8e0e0f}
+.individual-link a:active {background:#b50c0d}
+
+.item-gallery {position:fixed; left:-9999px; top:0; width:100%; height:100%; z-index:99997; overflow:auto; background:rgba(0, 0, 0, .8)}
+.item-gallery-open {left:0}
+.item-gallery-container {position:relative; width:940px; margin:0 auto}
+.item-gallery-title {font:15px/20px P22UndergroundCYProBook, sans-serif; text-align:center; padding:11px 0 9px 0; background:#fff}
+.item-gallery-big {text-align:center; font-size:0; line-height:0; position:relative}
+.item-gallery-big strong {visibility:hidden; position:relative; display:inline-block; vertical-align:middle}
+.item-gallery-big strong img {vertical-align:top}
+.item-gallery-prev,
+.item-gallery-next {display:block; width:118px; height:100%; position:absolute; top:0; background:rgba(0, 0, 0, .5); opacity:0}
+.item-gallery-prev:hover,
+.item-gallery-next:hover {opacity:1}
+.item-gallery-prev span,
+.item-gallery-next span {display:block; width:39px; height:75px; position:absolute; left:50%; top:50%; margin:-38px 0 0 -20px; background:url(../images/item-gallery-arrows.png)}
+.item-gallery-prev {left:0}
+.item-gallery-next {right:0}
+.item-gallery-next span {background-position:-39px top}
+.item-gallery-close {display:block; position:absolute; right:-20px; top:-20px; width:39px; height:39px; background:#cb0a0b url(../images/item-gallery-close.png) no-repeat center; border-radius:20px}
+.item-gallery-close:hover {background-color:#8e0e0f}
+.item-gallery-close:active {background-color:#b50c0d}
+.item-gallery-big img {position:relative; width:100%}
+.item-gallery-content {position:relative}
+.item-gallery-list {width:800px; line-height:0; position:relative; overflow:hidden; margin:0 auto}
+.item-gallery-list ul {position:relative; margin:0; padding:20px 0; list-style:none; width:9999px}
+.item-gallery-list ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.item-gallery-list ul li {float:left; margin:0 5px; padding:5px; position:relative}
+.item-gallery-list ul li:before {display:none}
+.item-gallery-list ul li.active {padding:3px; border:2px solid #cb0a0b}
+.item-gallery-list ul li img {opacity:.5; transition:opacity .5s ease}
+.item-gallery-list ul li a:hover img,
+.item-gallery-list ul li.active img {opacity:1}
+.item-gallery-list-prev,
+.item-gallery-list-next {position:absolute; top:50%; margin-top:-30px; display:block; width:60px; height:60px; background:#cb0a0b; border-radius:30px}
+.item-gallery-list-prev {left:0}
+.item-gallery-list-next {right:0}
+.item-gallery-list-prev:hover,
+.item-gallery-list-next:hover {background:#8e0e0f}
+.item-gallery-list-prev:active,
+.item-gallery-list-next:active {background:#b50c0d}
+.item-gallery-list-prev span,
+.item-gallery-list-next span {display:block; width:11px; height:20px; position:absolute; left:50%; top:50%; margin:-10px 0 0 -6px; background:url(../images/item-gallery-list-arrows.png)}
+.item-gallery-list-next span {background-position:-11px top}
+.item-gallery-loading {position:absolute; left:-15px; top:-15px; padding:15px; width:100%; height:100%; background:rgba(0, 0, 0, .2) url(../images/gallery-loading.gif) no-repeat center}
+.item-gallery-load {position:absolute; left:-9999px; top:-9999px; visibility:hidden}
