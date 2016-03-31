@@ -166,16 +166,18 @@ ul.slider-menu a span {position:relative; z-index:5}
 .manufacturers-inner {width:960px; margin:41px auto 0 auto; padding:0 0 29px 0}
 .manufacturers-title {text-align:center; font:20px/20px P22UndergroundCYProMedium, "PT Sans", sans-serif; text-transform:uppercase; padding:34px 0 0 0}
 .manufacturers-logos {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:16px 0 0 0}
-.manufacturers-logos a {display:inline-block; vertical-align:top; border:1px solid #e5e5e5; background:#fff; transition:border-color .5s ease; width:138px; height:58px; line-height:58px; margin:20px 10px 0 10px}
+.manufacturers-logos a,
+.manufacturers-logos span {display:inline-block; vertical-align:top; border:1px solid #e5e5e5; background:#fff; transition:border-color .5s ease; width:138px; height:58px; line-height:58px; margin:20px 10px 0 10px}
 .manufacturers-logos a:hover {border-color:#cb0a0b}
-.manufacturers-logos a img {vertical-align:middle}
+.manufacturers-logos a img,
+.manufacturers-logos span img {vertical-align:middle}
 .manufacturers-list {display:none}
 .manufacturers-list-letters {text-align:center; text-transform:uppercase; font:13px/13px P22UndergroundCYProBook, "PT Sans", sans-serif; padding:30px 0 0 0}
 .manufacturers-list-letters ul {display:inline-block; vertical-align:top; margin:0; padding:0; list-style:none}
-.manufacturers-list-letters ul li {float:left; margin:0 1px; padding:9px 7px 2px 7px}
-.manufacturers-list-letters ul li.active {border:1px solid #c80025; padding:8px 6px 1px 6px}
+.manufacturers-list-letters ul li {float:left; margin:0 1px; padding:1px}
+.manufacturers-list-letters ul li.active {border:1px solid #c80025; padding:0}
 .manufacturers-list-letters ul li:before {display:none}
-.manufacturers-list-letters ul li a {text-decoration:none; color:#000}
+.manufacturers-list-letters ul li a {text-decoration:none; color:#000; display:block; padding:8px 6px 1px 6px}
 .manufacturers-list-letters ul li a:hover {color:#c51228}
 .manufacturers-list-cols {padding:37px 0 0 0}
 .manufacturers-list-cols:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
