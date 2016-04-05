@@ -453,7 +453,7 @@ ul.footer-menu li:before {display:none}
 .detail-info dl {margin:9px 0 -9px 0; padding:0}
 .detail-info dl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .detail-info dt {float:left; clear:left; width:160px; color:#626262; font:9px/24px P22UndergroundCYProBook, "PT Sans", sans-serif; text-transform:uppercase}
-.detail-info dd {margin-left:60px; font:13px/24px P22UndergroundCYProDemi, "PT Sans", sans-serif}
+.detail-info dd {margin-left:160px; font:13px/24px P22UndergroundCYProDemi, "PT Sans", sans-serif}
 .detail-info h2 {border-bottom:1px solid #dbdbdb; padding-bottom:7px}
 .detail-info h2.detail-info-sizes-title {border-bottom:none; margin-bottom:0; padding-bottom:0}
 .detail-info table {border:none; margin-top:0; border-collapse:separate; border-spacing:0}
